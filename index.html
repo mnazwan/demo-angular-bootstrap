@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Job Ad Demo</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="css/demo.css">
+</head>
+<body >
+
+    <div class="container" ng-app ng-controller="JobAdCtrl">
+      <div class="row"><img ng-src="{{company_profile.banner_url.value}}" class="img-responsive" ></div>
+      <div class="row">
+        <div class="col-md-9">
+            <div class="row">
+                <div class="col-md-12">{{job.position_title.value}}</div>
+                <div class="col-md-12">{{company_profile.company_name.value}}</div>
+            </div>
+        </div>
+        <div class="col-md-3">company snapshots</div>
+      </div>
+    </div>    
+
+    <!-- Finally load libraries -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+
+    <script src="js/data/job.data.js"></script>
+    <script src="js/data/company-profile.data.js"></script>
+    <script src="js/app/demo.js"></script>
+
+</body>
+</html>
